@@ -1,0 +1,15 @@
+/Users/tamesh/Projects/WordleConsoleClone/WordleConsoleClone/bin/Debug/net6.0/WordleConsoleClone
+/Users/tamesh/Projects/WordleConsoleClone/WordleConsoleClone/bin/Debug/net6.0/WordleConsoleClone.deps.json
+/Users/tamesh/Projects/WordleConsoleClone/WordleConsoleClone/bin/Debug/net6.0/WordleConsoleClone.runtimeconfig.json
+/Users/tamesh/Projects/WordleConsoleClone/WordleConsoleClone/bin/Debug/net6.0/WordleConsoleClone.dll
+/Users/tamesh/Projects/WordleConsoleClone/WordleConsoleClone/bin/Debug/net6.0/WordleConsoleClone.pdb
+/Users/tamesh/Projects/WordleConsoleClone/WordleConsoleClone/obj/Debug/net6.0/WordleConsoleClone.csproj.AssemblyReference.cache
+/Users/tamesh/Projects/WordleConsoleClone/WordleConsoleClone/obj/Debug/net6.0/WordleConsoleClone.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tamesh/Projects/WordleConsoleClone/WordleConsoleClone/obj/Debug/net6.0/WordleConsoleClone.AssemblyInfoInputs.cache
+/Users/tamesh/Projects/WordleConsoleClone/WordleConsoleClone/obj/Debug/net6.0/WordleConsoleClone.AssemblyInfo.cs
+/Users/tamesh/Projects/WordleConsoleClone/WordleConsoleClone/obj/Debug/net6.0/WordleConsoleClone.csproj.CoreCompileInputs.cache
+/Users/tamesh/Projects/WordleConsoleClone/WordleConsoleClone/obj/Debug/net6.0/WordleConsoleClone.dll
+/Users/tamesh/Projects/WordleConsoleClone/WordleConsoleClone/obj/Debug/net6.0/refint/WordleConsoleClone.dll
+/Users/tamesh/Projects/WordleConsoleClone/WordleConsoleClone/obj/Debug/net6.0/WordleConsoleClone.pdb
+/Users/tamesh/Projects/WordleConsoleClone/WordleConsoleClone/obj/Debug/net6.0/WordleConsoleClone.genruntimeconfig.cache
+/Users/tamesh/Projects/WordleConsoleClone/WordleConsoleClone/obj/Debug/net6.0/ref/WordleConsoleClone.dll
