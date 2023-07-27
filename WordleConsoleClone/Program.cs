@@ -15,13 +15,16 @@ string[] words = File.ReadAllLines(@"/Users/tamesh/Projects/WordleConsoleClone/W
 //Gets random word from wordle list
 //string answer = words[randWordIndex];
 
-string answer = "apple";
+//MANUAL ANSWER MODE
+string answer = "aging";
 
 char[] answerArray = answer.ToCharArray();
 
-
+//Creates a list to hold the valid guesses
 List<string> possibleGuesses = new List<string>();
 
+
+//adds those guesses to the list
 foreach (char letter in answerArray)
 {
     possibleGuesses.Add(letter.ToString());
@@ -36,6 +39,8 @@ Console.WriteLine("│   │ │   │ │   │ │   │ │   │");
 Console.WriteLine("└───┘ └───┘ └───┘ └───┘ └───┘");
 
 bool guessing = true;
+
+int guesses = 6;
 
 while (guessing == true) {
     Console.WriteLine("Enter a Guess: ");
@@ -64,6 +69,21 @@ while (guessing == true) {
             }
         }
         Console.WriteLine(formattedGuess);
+        guesses -= 1;
+
+        if (possibleGuesses.Count == 0)
+        {
+            Console.WriteLine("You got it! the word was: " + answer);
+            Console.WriteLine("It took you a total of " + (6-guesses) + " guesses");
+        }
+
+        if (guesses <= 0)
+        {
+            Console.WriteLine("Try Again! You were so close.");
+            Console.WriteLine("The word was: " + answer);
+            guessing = false;
+        }
+
     }
     else
     {
