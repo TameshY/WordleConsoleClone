@@ -2,6 +2,7 @@
 
 using WordleConsoleClone;
 using System.Collections.Generic;
+using System.Linq;
 
 Random rand = new Random();
 
@@ -12,13 +13,19 @@ string[] words = File.ReadAllLines(@"/Users/tamesh/Projects/WordleConsoleClone/W
 
 
 //Gets random word from wordle list
-
-
 //string answer = words[randWordIndex];
 
 string answer = "apple";
 
 char[] answerArray = answer.ToCharArray();
+
+
+List<string> possibleGuesses = new List<string>();
+
+foreach (char letter in answerArray)
+{
+    possibleGuesses.Add(letter.ToString());
+}
 
 //holds the formatting method for strings
 Alphabet stringFormatter = new Alphabet();
@@ -28,16 +35,6 @@ Console.WriteLine("┌───┐ ┌───┐ ┌───┐ ┌───�
 Console.WriteLine("│   │ │   │ │   │ │   │ │   │");
 Console.WriteLine("└───┘ └───┘ └───┘ └───┘ └───┘");
 
-string test = stringFormatter.builder("Apple");
-
-
-char[] testArray = test.ToCharArray();
-
-Console.WriteLine(stringFormatter.AlmostCorretAppend(stringFormatter.builder("apple"), 4)); ;
-
-
-
-/**
 bool guessing = true;
 
 while (guessing == true) {
@@ -46,30 +43,33 @@ while (guessing == true) {
 
     if (words.Contains(guess.ToLower()))
     {
+
         char[] guessLetterArray = guess.ToCharArray();
+
+        string formattedGuess = stringFormatter.builder(guess);
+
         for (int index = 0; index < 5; index++)
         {
             if (answerArray.Contains(guessLetterArray[index]))
             {
                 if (answerArray[index] == guessLetterArray[index])
                 {
-                    Console.WriteLine(stringFormatter.CorretAppend(stringFormatter.builder(guess), index));
+                    formattedGuess = stringFormatter.CorretAppend(formattedGuess, index);
+                    possibleGuesses.Remove(guessLetterArray[index].ToString());
                 }
-                else
+                else if (answerArray.Contains(guessLetterArray[index]) && possibleGuesses.Contains(guessLetterArray[index].ToString()))
                 {
-                    
-                    string baseWordFormat = stringFormatter.builder(guess);
+                    formattedGuess = stringFormatter.AlmostCorretAppend(formattedGuess, index);
                 }
-
             }
         }
+        Console.WriteLine(formattedGuess);
     }
     else
     {
-        Console.WriteLine("Pick a different word");
+        Console.WriteLine("Not a word in the word list!");
     }
-    //NEXT PRINT THE CHARCTER IN FACY FORMAT
+    
     
 }
 
-**/

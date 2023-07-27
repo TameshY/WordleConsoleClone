@@ -26,45 +26,44 @@ namespace WordleConsoleClone
 
         public string CorretAppend(string formattedText, int index)
         {
-            char[] checkMark = "✔".ToCharArray();
             char[] charArray = formattedText.ToCharArray();
             switch (index)
             {
                 case 0:
                     {
-                        charArray[31] = checkMark[0];
+                        charArray[31] = '✔';
 
-                        charArray[33] = checkMark[0];
+                        charArray[33] = '✔';
 
                         break;
                     }
                 case 1:
                     {
-                        charArray[37] = checkMark[0];
+                        charArray[37] = '✔';
 
-                        charArray[39] = checkMark[0];
+                        charArray[39] = '✔';
                         break;
                         
                     }
                 case 2:
                     {
-                        charArray[43] = checkMark[0];
+                        charArray[43] = '✔';
 
-                        charArray[45] = checkMark[0];
+                        charArray[45] = '✔';
                         break;
                     }
                 case 3:
                     {
-                        charArray[49] = checkMark[0];
+                        charArray[49] = '✔';
 
-                        charArray[51] = checkMark[0];
+                        charArray[51] = '✔';
                         break;
                     }
                 case 4:
                     {
-                        charArray[55] = checkMark[0];
+                        charArray[55] = '✔';
 
-                        charArray[57] = checkMark[0];
+                        charArray[57] = '✔';
                         break;
                     }
              
