@@ -1,4 +1,27 @@
 ﻿<Properties StartupConfiguration="{0D644B35-D903-4415-BB68-B80843560C54}|Default">
-  <MonoDevelop.Ide.ItemProperties.WordleConsoleClone FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.WordleConsoleClone PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Alphabet.cs">
+    <Files>
+      <File FileName="valid-wordle-words.txt" Line="1" Column="1" />
+      <File FileName="Alphabet.cs" Line="58" Column="19" />
+      <File FileName="Program.cs" Line="33" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WordleConsoleClone">
+            <Node name="WordleConsoleClone">
+              <Node name="Alphabet.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
